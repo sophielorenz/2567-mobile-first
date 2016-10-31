@@ -13,8 +13,32 @@
 
 .wrapper {
 	width: 65%; /* Get your original percentage as close to 1024px as possible */
-	background-color: #302F2F;
 	margin: 0 auto;
+}
+
+.yellow-div {
+	background-color: yellow;
+}
+
+.p-right {
+	text-align: right;
+}
+
+.background {
+	background-color: teal;
+	width: 100%;
+	height: 300px;
+}
+
+.block-center {
+	float: none;
+	margin: 0 auto;
+}
+
+.row {
+	overflow: auto;
+	background-color: #DCDCDC;
+	height: 100px;
 }
 
 .row:after {
@@ -57,6 +81,18 @@ figcaption {
 .green {
 	background-color: #75E593;
 	height: 50px;
+}
+
+.f-left {
+	float: left;
+}
+
+.f-right {
+	float: right;
+}
+
+h2 {
+	text-align: center;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ONE COLUMN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
