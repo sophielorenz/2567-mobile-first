@@ -1,7 +1,208 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LARGE SCREEN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*
+
+>>>>>> TABLE OF CONTENTS <<<<<<
+
+1.0 - TYPOGRAPHY
+-------------------------
+1.1 - Headings
+1.2 - Body Copy
+1.3 - Buttons
+1.4 - Forms
+1.5 - Lists
+1.6 - Tables
+2.0 - NAVIGATION MENUS
+-------------------------
+2.1 - Main
+2.2 - Sub
+2.3 - Footer
+3.0 - CONTENT
+-------------------------
+3.1 - Site Structure
+3.2- Site Header
+3.3- Site Footer
+4.0 - MEDIA
+-------------------------
+5.0 - UTILIY
+-------------------------
+5.1 - Text Sizes
+5.2 - Colors
+5.3 - Alignments
+
+*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> LARGE DISPLAY <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* >>>>>> 1.0 TYPOGRAPHY <<<<<< */
+
+/* 1.1 Headings */
+
+h2 {
+	font: 600 2rem 'Work Sans', sans-serif;
+	color: #0a65da;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3 {
+	font: 400 1rem 'Work Sans', sans-serif;
+	text-align: center;
+}
+
+/* 1.2 Body Copy */
+
+.col-5-6 p {
+	text-align: center;
+}
+
+#hero-callout {
+	font: 600 4.5rem 'Work Sans', sans-serif;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 23px 0;
+}
+
+#hero-p {
+	font: 400 1.25rem 'Work Sans', sans-serif;
+	color: #fff;
+	line-height: 1.45rem;
+}
+
+#our-work p {
+	font: 300 1rem 'Work Sans', sans-serif;
+	text-align: center;
+}/* Could this also be used for the Our People paragraphs? Consider making a class here */
+
+#our-people-p {
+	font: 400 1.25rem 'Work Sans', sans-serif;
+}
+
+.profile-p {
+	font: 300 0.75rem 'Work Sans', sans-serif;
+	text-align: center;
+}
+
+footer .col-10-12 {
+	font: 300 0.75rem 'Work Sans', sans-serif;
+	color: #fff;
+	text-align: center;
+	line-height: 2px;
+	margin-top: 1.5rem;
+}
+
+
+/* 1.3 Buttons */
+
+nav li a {
+	font: 600 1rem 'Work Sans', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 50px;
+}
+
+nav li:last-child a {
+	margin-right: 0;
+	padding: 0;
+}
+
+nav li a:hover {
+	border-bottom: 0.15rem solid #fff;
+}
+
+#hero-cta li { /*Why does this work for the first nav but not here? */
+	display: inline-block;
+}
+
+#hero-cta li a {
+	font: 600 1rem 'Work Sans', sans-serif;
+	color: #fff;
+	text-decoration: none;
+	margin-right: 45px;
+}
+
+#hero-cta li:last-child a {
+	margin-right: 0;
+}
+
+#hero-cta li a:hover {
+	border-bottom: 0.15rem solid #fff;
+}
+
+/* 1.4 Forms */
+/* 1.5 Lists */
+/* 1.6 Tables */
+
+/* >>>>>> 2.0 NAVIGATION MENUS <<<<<< */
+
+/* 2.1 Main */
+
+ul {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+ }
+ 
+ nav li {
+	 display: inline-block;
+ }
+ 
+ #our-people ul li {
+	 display: inline-block;
+ }
+ 
+ #our-people .col-1-3 .circle, #our-people .col-2-3 ul {
+	display: inline-block;
+}
+
+#our-people .col-1-3, #our-people .col-1-2 {
+	text-align: center;
+}
+ 
+ .twitter-icon {
+    background: url(../img/twitter-icon.png) no-repeat;
+    background-position: 0 0;
+	display: inline-block;
+    padding-right: 45px;
+    height: 45px;
+    width: 45px;
+}
+
+.twitter-icon:hover {
+	background-position: 0 -45px;
+}
+
+ .facebook-icon {
+    background: url(../img/facebook-icon.png) no-repeat;
+    background-position: 0 0;
+	display: inline-block;
+    padding-right: 45px;
+    height: 45px;
+    width: 45px;
+}
+
+.facebook-icon:hover {
+	background-position: 0 -45px;
+}
+
+/* 2.2 Sub */
+/* 2.3 Footer */
+
+/* >>>>>> 3.0 CONTENT <<<<<< */
+
+/* 3.1 Site Structure */
+
+* {
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 *, *:after, *:before {
 	-moz-box-sizing: border-box;
@@ -11,37 +212,10 @@
 	box-sizing: border-box;
 }
 
-.wrapper {
-	width: 65%; /* Get your original percentage as close to 1024px as possible */
-	margin: 0 auto;
-}
-
-.yellow-div {
-	background-color: yellow;
-}
-
-.p-right {
-	text-align: right;
-}
-
-.background {
-	background-color: teal;
-	width: 100%;
-}
-
 .row:after {
 	content: ""; /* You have to this for any pseudo element before/after */
 	display: table;
 	clear: both;
-}
-
-img {
-	max-width: 100%; /* Don't go over 1366 pixels for image width */
-}
-
-figcaption {
-	font-family: 'Avenir';
-	color: #fff;
 }
 
 [class*='col-'] { /* Targets any class that beings with col- */
@@ -54,21 +228,99 @@ figcaption {
 	padding-right: 0;
 }
 
-.blue {
-	background-color: #5f64c0;
-	height: 50px; /* 
-	
-	By default this will be 100% of its parent
-	
-	To apply a background color to a column you need to place a div within that column 
-	and apply the background color to that div inside so that a gap is created 
-	
-	*/
+.wrapper {
+	width: 65%; /* Get your original percentage as close to 1024px as possible */
+	margin: 0 auto;
 }
 
-.green {
-	background-color: #75E593;
-	height: 50px;
+.block-center {
+	float: none;
+	margin: 0 auto;
+}
+
+#our-people {
+	background-color: #fafafa;
+	width: 100%;
+	padding-bottom: 8rem;
+}
+
+#our-people-overview {
+	margin-bottom: 5rem;
+	padding-top: 1rem;
+}
+
+#our-work .col-1-4 {
+	text-align: center;
+	padding-bottom: 3rem;
+}
+
+footer {
+	background-color: #0a65da; /* Class for the color? */
+	padding-top: 1.5rem;
+}
+
+/* 3.2 Site Header */
+/* 3.3 Site Footer */
+
+/* >>>>>> 4.0 MEDIA <<<<<< */
+
+img {
+	max-width: 100%; /* Don't go over 1366 pixels for image width */
+}
+
+figcaption {
+	font-family: 'Avenir';
+	color: #fff;
+}
+
+#hero {
+  background: url(../img/hero-img.jpg) no-repeat center center;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 45px 0 120px;
+}
+
+.circle {
+	-moz-border-radius: 87.5px;
+	-ms-border-radius: 87.5px;
+	-o-border-radius: 87.5px;
+	-webkit-border-radius: 87.5px;
+	border-radius: 87.5px;
+	height: 175px;
+	width: 175px;
+}
+
+#john-doe {
+	background: url(../img/john-doe.jpg) no-repeat center -10px;
+	background-size: 180px;
+}
+
+#jane-doe {
+	background: url(../img/jane-doe.jpg) no-repeat center -10px;
+	background-size: 180px;
+}
+
+#john-smith {
+	background: url(../img/john-smith.jpg) no-repeat center -30px;
+	background-size: 180px;
+}
+
+#mary-smith {
+	background: url(../img/mary-smith.jpg) no-repeat center -10px;
+	background-size: 180px;
+}
+
+/* >>>>>> 5.0 UTILITY <<<<<< (ONLY FOR CLASSES THAT ARE DOING ONE TASK) */
+
+/* 5.1 Text Sizes */
+/* 5.2 Colors */
+/* 5.3 Alignments */
+
+.p-right {
+	text-align: right;
 }
 
 .f-left {
@@ -79,37 +331,25 @@ figcaption {
 	float: right;
 }
 
-h2 {
-	text-align: center;
-}
-
-.col-5-6 p {
-	text-align: center;
-}
-
-#bg-footer {
-	background-color: orange;
-}
-
-.block-center {
-	float: none;
-	margin: 0 auto;
-}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END LARGE DISPLAY <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ONE COLUMN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> COLUMN WIDTHS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+/* ~~~ ONE COLUMN ~~~ */
 
 .col-1-1 {
 	width: 100%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TWO COLUMNS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ TWO COLUMNS ~~~ */
 
 .col-1-2 {
 	width: 50%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ THREE COLUMNS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ THREE COLUMNS ~~~ */
 
 .col-1-3 {
 	width: 33.33%
@@ -119,7 +359,7 @@ h2 {
 	width: 66.671%
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FOUR COLUMNS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ FOUR COLUMNS ~~~ */
 
 .col-1-4 {
 	width: 25%;
@@ -129,7 +369,7 @@ h2 {
 	width: 75%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FIVE COLUMNS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ FIVE COLUMNS ~~~ */
 
 .col-1-5 {
 	width: 20%;
@@ -139,7 +379,7 @@ h2 {
 	width: 80%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SIX COLUMNS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ SIX COLUMNS ~~~ */
 
 .col-1-6 {
 	width: 16.66%;
@@ -149,7 +389,7 @@ h2 {
 	width: 83.34%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SEVEN COLUMNS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ SEVEN COLUMNS ~~~ */
 
 .col-1-7 {
 	width: 14.285%;
@@ -159,7 +399,7 @@ h2 {
 	width: 85.715%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EIGHT COLUMNS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ EIGHT COLUMNS ~~~ */
 
 .col-1-8 {
 	width: 12.5%;
@@ -169,7 +409,7 @@ h2 {
 	width: 87.5%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NINE COLUMNS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ NINE COLUMNS ~~~ */
 
 .col-1-9 {
 	width: 11.11%;
@@ -179,7 +419,7 @@ h2 {
 	width: 88.89%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TEN COLUMNS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ TEN COLUMNS ~~~ */
 
 .col-1-10 {
 	width: 10%;
@@ -190,7 +430,7 @@ h2 {
 }
 
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ELEVEN COLUMNS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ ELEVEN COLUMNS ~~~ */
 
 .col-1-11 {
 	width: 9.09%;
@@ -200,7 +440,7 @@ h2 {
 	width: 90.91%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TWELVE COLUMNS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~ TWELVE COLUMNS ~~~ */
 
 .col-1-12 {
 	width: 8.33%;
@@ -210,68 +450,63 @@ h2 {
 	width: 91.67%;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SMALLER SCREEN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SMALL DISPLAY <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 @media (max-width: 480px) {
 	
+
+/* >>>>>> 1.0 TYPOGRAPHY <<<<<< */
+/* 1.1 Headings */
+/* 1.2 Body Copy */
+
+#hero-callout {
+	text-align: center;
+	font-size: 1.95rem;
+}
+
+#hero-p {
+	text-align: center;
+}
+
+/* 1.3 Buttons */
+/* 1.4 Forms */
+/* 1.5 Lists */
+/* 1.6 Tables */
+
+/* >>>>>> 2.0 NAVIGATION MENUS <<<<<< */
+/* 2.1 Main */
+/* 2.2 Sub */
+/* 2.3 Footer */
+
+/* >>>>>> 3.0 CONTENT <<<<<< */
+/* 3.1 Site Structure */
+
 .wrapper {
 	width: 85%;
 }
 
-.col-1-4:nth-child(2), .col-1-6:nth-child(even), .col-1-6.col-sm, .col-1-7, 
-.col-1-8:nth-child(even), .col-1-8.col-sm, .col-1-9:nth-child(3), 
-.col-1-9:nth-child(6), .col-1-9.col-sm, .col-1-10:nth-child(even), 
-.col-1-10.col-sm, .col-1-11, .col-1-12:nth-child(4), .col-1-12:nth-child(8), .col-10-11, 
-.col-1-12.col-sm {
-	padding-right: 0
+.col-1-2, .col-1-3, .col-2-3, .col-1-4, .col-5-6 {
+	width: 100%;	
 }
 
-.col-1-4, .col-1-6, .col-1-8, .col-1-10 {
-	width: 50%;
+.col-1-10 {
+	width: 33.33%;
+	margin-left: 33.33%; /*is an offset okay?*/
+	text-align: center;
 }
 
-.col-1-9 {
-	width: 33.33%
+/* 3.2 Site Header */
+/* 3.3 Site Footer */
+
+/* >>>>>> 4.0 MEDIA <<<<<< */
+
+.col-1-10 img {
+	display: inline-block;
 }
 
-.col-1-4.col-sm, .col-1-12 {
-	width: 25%;
-}
-
-.col-1-6.col-sm, .col-5-6, .col-1-7, .col-6-7, .col-1-8.col-sm, .col-7-8.col-sm, 
-.col-1-9.col-sm, .col-8-9, .col-1-10.col-sm, .col-9-10, .col-1-11, .col-10-11, .col-1-12.col-sm, .col-11-12  {
-	width: 100%;
-}
+/* >>>>>> 5.0 UTLITY <<<<<< */
+/* 5.1 Text Sizes */
+/* 5.2 Colors */
+/* 5.3 Alignments */
 
 }
-
-/* ^ Kind of acts like a hover state
-
-The media is causing the break point
-
-This is a very common break point
-
-iPhone: 320px wide
-Android: 420px wide
-Tablets: 768px wide
-
-On mobile .col-1-7 width needs to be 100%
-
-On mobile .col-1-8 width needs to be 25%, 50%
-
- */
- 
-/*
-
-@media (max-width: 420px) {
-	
-	.wrapper {
-		width: 95%;
-	}
-}
-
-Don't worry about this for now!
-
-*/ 
-
-
