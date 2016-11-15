@@ -7,26 +7,34 @@
 
 1.0 - TYPOGRAPHY
 -------------------------
+
 1.1 - Headings
 1.2 - Body Copy
 1.3 - Buttons
 1.4 - Forms
 1.5 - Lists
 1.6 - Tables
+
 2.0 - NAVIGATION MENUS
 -------------------------
+
 2.1 - Main
 2.2 - Sub
 2.3 - Footer
+
 3.0 - CONTENT
 -------------------------
+
 3.1 - Site Structure
 3.2- Site Header
 3.3- Site Footer
+
 4.0 - MEDIA
 -------------------------
+
 5.0 - UTILIY
 -------------------------
+
 5.1 - Text Sizes
 5.2 - Colors
 5.3 - Alignments
@@ -42,39 +50,29 @@
 h2 {
 	font: 600 2rem 'Work Sans', sans-serif;
 	color: #0a65da;
-	text-align: center;
-	text-transform: uppercase;
+	padding: 1.45rem 0;
 }
 
 h3 {
 	font: 400 1rem 'Work Sans', sans-serif;
-	text-align: center;
 }
 
 /* 1.2 Body Copy */
 
-.col-5-6 p {
-	text-align: center;
-}
-
 #hero-callout {
 	font: 600 4.5rem 'Work Sans', sans-serif;
-	color: #fff;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 	margin: 23px 0;
 }
 
 #hero-p {
 	font: 400 1.25rem 'Work Sans', sans-serif;
-	color: #fff;
 	line-height: 1.45rem;
 }
 
 #our-work p {
 	font: 300 1rem 'Work Sans', sans-serif;
-	text-align: center;
-}/* Could this also be used for the Our People paragraphs? Consider making a class here */
+}
 
 #our-people-p {
 	font: 400 1.25rem 'Work Sans', sans-serif;
@@ -82,54 +80,37 @@ h3 {
 
 .profile-p {
 	font: 300 0.75rem 'Work Sans', sans-serif;
-	text-align: center;
 }
 
 footer .col-10-12 {
 	font: 300 0.75rem 'Work Sans', sans-serif;
-	color: #fff;
-	text-align: center;
 	line-height: 2px;
 	margin-top: 1.5rem;
 }
-
 
 /* 1.3 Buttons */
 
 nav li a {
 	font: 600 1rem 'Work Sans', sans-serif;
-	color: #fff;
-	text-decoration: none;
-	display: inline-block;
 	margin-right: 50px;
 }
 
-nav li:last-child a {
+nav li:last-child a, #hero-cta li:last-child a {
 	margin-right: 0;
-	padding: 0;
 }
 
-nav li a:hover {
+ul, nav li:last-child a, #hero-cta li:last-child a {
+	 padding: 0;
+ }
+
+nav li a:hover, #hero-cta li a:hover {
 	border-bottom: 0.15rem solid #fff;
-}
-
-#hero-cta li { /*Why does this work for the first nav but not here? */
-	display: inline-block;
+	padding-bottom: 0.15rem;
 }
 
 #hero-cta li a {
 	font: 600 1rem 'Work Sans', sans-serif;
-	color: #fff;
-	text-decoration: none;
 	margin-right: 45px;
-}
-
-#hero-cta li:last-child a {
-	margin-right: 0;
-}
-
-#hero-cta li a:hover {
-	border-bottom: 0.15rem solid #fff;
 }
 
 /* 1.4 Forms */
@@ -140,36 +121,15 @@ nav li a:hover {
 
 /* 2.1 Main */
 
-ul {
-	display: inline-block;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
- }
- 
- nav li {
-	 display: inline-block;
- }
- 
- #our-people ul li {
-	 display: inline-block;
- }
- 
- #our-people .col-1-3 .circle, #our-people .col-2-3 ul {
-	display: inline-block;
-}
-
 #our-people .col-1-3, #our-people .col-1-2 {
 	text-align: center;
 }
  
  .twitter-icon {
     background: url(../img/twitter-icon.png) no-repeat;
-    background-position: 0 0;
-	display: inline-block;
     padding-right: 45px;
+	width: 45px;
     height: 45px;
-    width: 45px;
 }
 
 .twitter-icon:hover {
@@ -178,11 +138,9 @@ ul {
 
  .facebook-icon {
     background: url(../img/facebook-icon.png) no-repeat;
-    background-position: 0 0;
-	display: inline-block;
     padding-right: 45px;
-    height: 45px;
     width: 45px;
+	height: 45px;
 }
 
 .facebook-icon:hover {
@@ -195,14 +153,6 @@ ul {
 /* >>>>>> 3.0 CONTENT <<<<<< */
 
 /* 3.1 Site Structure */
-
-* {
-	-ms-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
 
 *, *:after, *:before {
 	-moz-box-sizing: border-box;
@@ -220,7 +170,7 @@ ul {
 
 [class*='col-'] { /* Targets any class that beings with col- */
 	float: left;
-	padding-right: 20px; /* Using pixels because we never want the gutter to change size */
+	padding-right: 20px; /* Use pixels because we never want the gutter to change size */
 	margin-bottom: 20px;
 }
 
@@ -238,25 +188,28 @@ ul {
 	margin: 0 auto;
 }
 
+#our-people h2 {
+	padding-bottom: 0rem;
+}
+
 #our-people {
 	background-color: #fafafa;
-	width: 100%;
 	padding-bottom: 8rem;
+	width: 100%;
 }
 
 #our-people-overview {
-	margin-bottom: 5rem;
 	padding-top: 1rem;
+	margin-bottom: 5rem;
 }
 
 #our-work .col-1-4 {
-	text-align: center;
 	padding-bottom: 3rem;
 }
 
 footer {
 	background-color: #0a65da; /* Class for the color? */
-	padding-top: 1.5rem;
+	padding-top: 2.5rem;
 }
 
 /* 3.2 Site Header */
@@ -268,19 +221,14 @@ img {
 	max-width: 100%; /* Don't go over 1366 pixels for image width */
 }
 
-figcaption {
-	font-family: 'Avenir';
-	color: #fff;
-}
-
 #hero {
-  background: url(../img/hero-img.jpg) no-repeat center center;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  padding: 45px 0 120px;
+  	background: url(../img/hero-img.jpg) no-repeat center center;
+  	-moz-background-size: cover;
+  	-ms-background-size: cover;
+  	-o-background-size: cover;
+  	-webkit-background-size: cover;
+  	background-size: cover;
+  	padding: 45px 0 120px;
 }
 
 .circle {
@@ -289,38 +237,84 @@ figcaption {
 	-o-border-radius: 87.5px;
 	-webkit-border-radius: 87.5px;
 	border-radius: 87.5px;
-	height: 175px;
 	width: 175px;
+	height: 175px;
 }
 
 #john-doe {
 	background: url(../img/john-doe.jpg) no-repeat center -10px;
+	-moz-background-size: contain;
+  	-ms-background-size: contain;
+  	-o-background-size: contain;
+  	-webkit-background-size: contain;
+  	background-size: contain;
 	background-size: 180px;
 }
 
 #jane-doe {
 	background: url(../img/jane-doe.jpg) no-repeat center -10px;
+	-moz-background-size: contain;
+  	-ms-background-size: contain;
+  	-o-background-size: contain;
+  	-webkit-background-size: contain;
+  	background-size: contain;
 	background-size: 180px;
 }
 
 #john-smith {
 	background: url(../img/john-smith.jpg) no-repeat center -30px;
+	-moz-background-size: contain;
+  	-ms-background-size: contain;
+  	-o-background-size: contain;
+  	-webkit-background-size: contain;
+  	background-size: contain;
 	background-size: 180px;
 }
 
 #mary-smith {
 	background: url(../img/mary-smith.jpg) no-repeat center -10px;
+	-moz-background-size: contain;
+  	-ms-background-size: contain;
+  	-o-background-size: contain;
+  	-webkit-background-size: contain;
+  	background-size: contain;
 	background-size: 180px;
 }
 
 /* >>>>>> 5.0 UTILITY <<<<<< (ONLY FOR CLASSES THAT ARE DOING ONE TASK) */
 
 /* 5.1 Text Sizes */
+
+h2, #hero-callout {
+	text-transform: uppercase;
+}
+
+nav li a, #hero-cta li a {
+	text-decoration: none;
+}
+
 /* 5.2 Colors */
+
+nav li a, #hero-callout, #hero-p, #hero-cta li a, footer .col-10-12 {
+	color: #fff;
+}
+
 /* 5.3 Alignments */
 
-.p-right {
+#hero, nav ul, .p-right {
 	text-align: right;
+}
+
+h2, h3, .col-5-6 p, #our-work p, .profile-p, footer .col-10-12, #our-work .col-1-4  {
+	text-align: center;
+}
+
+nav li, nav li a, #hero-cta li, #our-people ul li, #our-people .col-1-3 .circle, #our-people .col-2-3 ul, .twitter-icon, .facebook-icon {
+	 display: inline-block;
+ }
+ 
+h1, ul {
+	margin: 0;
 }
 
 .f-left {
@@ -454,18 +448,32 @@ figcaption {
 
 @media (max-width: 480px) {
 	
-
 /* >>>>>> 1.0 TYPOGRAPHY <<<<<< */
 /* 1.1 Headings */
+
+h3 {
+	font-size: 1.45rem;
+	font-weight: 700;
+}
+
+#our-people h3 {
+	font-weight: 300;
+	margin: 0;
+}
+
 /* 1.2 Body Copy */
 
 #hero-callout {
-	text-align: center;
 	font-size: 1.95rem;
+	text-align: center;
 }
 
 #hero-p {
 	text-align: center;
+}
+
+#our-work p, #our-people p {
+	font-size: 1.25rem;
 }
 
 /* 1.3 Buttons */
@@ -475,6 +483,15 @@ figcaption {
 
 /* >>>>>> 2.0 NAVIGATION MENUS <<<<<< */
 /* 2.1 Main */
+
+ul {
+	margin: 1.5rem 0 2rem;
+}
+
+#hero-cta {
+	margin-top: 2rem;
+}
+
 /* 2.2 Sub */
 /* 2.3 Footer */
 
@@ -485,20 +502,43 @@ figcaption {
 	width: 85%;
 }
 
+h1 {
+	padding-top: 1.5rem;
+}
+
 .col-1-2, .col-1-3, .col-2-3, .col-1-4, .col-5-6 {
 	width: 100%;	
 }
 
 .col-1-10 {
 	width: 33.33%;
-	margin-left: 33.33%; /*is an offset okay?*/
+}
+
+.logo, footer div:last-child, nav, header div.f-right { 
+	float: none;
+	margin: 0 auto;
+}
+
+body, #hero, nav ul {
 	text-align: center;
+}
+
+#our-people {
+	padding-bottom: 0rem;
+}
+
+footer {
+	padding: 4rem 0 5rem;
 }
 
 /* 3.2 Site Header */
 /* 3.3 Site Footer */
 
 /* >>>>>> 4.0 MEDIA <<<<<< */
+
+#hero {
+	padding: 5px 0 65px;
+}
 
 .col-1-10 img {
 	display: inline-block;
@@ -508,5 +548,9 @@ figcaption {
 /* 5.1 Text Sizes */
 /* 5.2 Colors */
 /* 5.3 Alignments */
+
+#hero ul {
+	text-align: center;
+}
 
 }

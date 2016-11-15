@@ -5,196 +5,195 @@
 <meta name="viewport" content="width=device-width, initial scale=1"> 
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
 
 
 <title>Home</title>
 </head>
-
-<body>
-<!-- HEADER -->
-	<header>
-    	<section id="hero"><!-- Why do I think this is semantically wrong? -->
-			<div class="wrapper">
-    			<div class="row">
-        			<div class="col-1-10 f-left ">
-                   		<a href="#"><img src="img/logo.png" alt="Logo"></a>
-                    </div>
-            		<div class="col-2-3 f-right ">
-                    	<nav>
-                        	<ul class="f-right">
-                            	<li><a href="#">Home</a></li>
-                            	<li><a href="#">Work</a></li>
-                            	<li><a href="#">About</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-        		</div>
-                <div class="row">
-                	<p class="p-right" id="hero-callout">We Design Things</p><!-- Are the indents here wacky? -->
-                	<div class="col-2-3 f-right p-right ">
-                    	<p id="hero-p">Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. 
-                		Eum omnium docendi cu. Aliquid delenit an pri, ad mea nostrud nominavi menandri.</p>
-                        <ul id="hero-cta" class="f-right">
-                        	<li><a href="#">Hire Us</a></li>
-                            <li><a href="#">View Work</a></li>
-                        </ul>
-                    </div>
-                </div>
-    		</div>
-		</section>
-    </header>
-<!-- OUR WORK -->
-	<section id="our-work">
-        <div class="wrapper">
-            <h2>Our Work</h2>
-            <div class="row">
-                <section class="col-1-4">
-                    <div class="">
-                    	<img class="block-center" src="img/app-icon.png" alt="">
-                    	<header>
-                        	<h3>App Design</h3>
-                        </header>
-                    	<p>Nam purto solet eu, vero mediocrem hendrerit ad ius.</p>
-                    </div>
-                </section>
-                <section class="col-1-4">
-                    <div class="">
-                    	<img src="img/print-icon.png" alt="">
-                        <header>
-                        	<h3>Print Design</h3>
-                        </header>
-                    <p>Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
-                    </div>
-                </section>
-                <section class="col-1-4">
-                    <div class="">
-                    	<img src="img/interactive-icon.png" alt="">
-                        <header>
-                        	<h3>Interactive</h3>
-                        </header>
-                    <p>Exerci antiopam constituam per ex, pro odio enim te, ut eam quidam docendi ancillae. Id nisl appareat mel.</p></div>
-                </section>
-                <section class="col-1-4">
-                    <div class="">
-                    <img src="img/branding-icon.png" alt="">
-                    <header>
-                    	<h3>Branding</h3>	
-                    </header>
-                    <p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu.</p></div>
-                </section>
-            </div>
-        </div>
-    </section>
-<!-- OUR PEOPLE -->
-	<section id="our-people">
-    	<div class="wrapper">
-        	<div id="our-people-overview" class="col-5-6 block-center"><!-- Is this also a section not a div? How can I target this without an ID? -->
-            	<div class="row">
-               		<header>
-                		<h2>Our People</h2>
-                    	<p id="our-people-p"><!-- Can I target this without an ID -->Ea expetenda prodesset cum, tibique principes laboramus id pro. Ei dolorem facilis volutpat sed, eu pro dicta iracundia scripserit. Vel singulis posidonium ea, primis possim voluptatum ei has. 
-                		Ut usu sale modus liberavisse. Eos reque mnesarchum ea, ea tamquam disputando has.</p>
-                	</header>
-                </div>
-            </div>
-              <div class="row">
-                  <section class="col-1-2 f-left">
-                      <div class="row">
-                          <div class="col-1-3 f-left">
-                              <div id="john-doe" class="circle"></div>
-                          </div>
-                          <div class="col-1-2 f-right">
-                              <header>
-                                  <h3>John Doe</h3>
-                              </header>
-                              <p class="profile-p">Nam purto solet eu, vero mediocrem hendrerit ad ius.</p>
-                              <ul>
-                                  <li><a class="twitter-icon" href="http://www.twitter.com" target="_blank"></a></li>
-                                  <li><a class="facebook-icon" href="http://www.facebook.com" target="_blank"></a></li>
-                              </ul>
-                          </div>
+  <body>
+  <!-- HEADER -->
+      <header>
+          <section id="hero"><!-- Why do I think this is semantically wrong? Is this an actual section? -->
+              <div class="wrapper">
+                  <div class="row">
+                      <div class="col-1-10 logo">
+                          <h1><a href="#"><img src="img/logo.png" alt="Logo"></a></h1>
                       </div>
-                  </section>
-                  <section class="col-1-2 f-left">
-                      <div class="row">
-                          <div class="col-1-3 f-left">
-                              <div id="jane-doe" class="circle"></div>
-                          </div>
-                          <div class="col-1-2 f-right">
-                              <header>
-                                  <h3>Jane Doe</h3>
-                              </header>
-                              <p class="profile-p">Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
+                      <div class="col-2-3 f-right">
+                          <nav>
                               <ul>
-                                  <li><a class="twitter-icon" href="http://www.twitter.com" target="_blank"></a></li>
-                                  <li><a class="facebook-icon" href="http://www.facebook.com" target="_blank"></a></li>
+                                  <li><a href="#">Home</a></li>
+                                  <li><a href="#our-work">Work</a></li>
+                                  <li><a href="#our-people">About</a></li>
                               </ul>
-                          </div>
+                          </nav>
                       </div>
-                  </section>
+                  </div>
+                  <div class="row">
+                      <p id="hero-callout" class="animated fadeInDown">We Design Things</p><!-- Are the indents here wacky? -->
+                      <div class="col-2-3 f-right">
+                          <p id="hero-p">Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. 
+                          Eum omnium docendi cu. Aliquid delenit an pri, ad mea nostrud nominavi menandri.</p>
+                          <ul id="hero-cta">
+                              <li><a href="#">Hire Us</a></li>
+                              <li><a href="#">View Work</a></li>
+                          </ul>
+                      </div>
+                  </div>
               </div>
+          </section>
+      </header>
+  <!-- OUR WORK -->
+      <section id="our-work">
+          <div class="wrapper">
+              <h2>Our Work</h2>
               <div class="row">
-                  <section class="col-1-2 f-left">
-                      <div class="row">
-                          <div class="col-1-3 f-left">
-                              <div id="john-smith" class="circle"></div>
-                          </div>
-                          <div class="col-1-2 f-right">
-                              <header>
-                                  <h3>John Smith</h3>
-                              </header>
-                              <p class="profile-p">Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
-                              <ul>
-                                  <li><a class="twitter-icon" href="http://www.twitter.com" target="_blank"></a></li>
-                                  <li><a class="facebook-icon" href="http://www.facebook.com" target="_blank"></a></li>
-                              </ul>
-                          </div>
+                  <section class="col-1-4">
+                      <div class="">
+                          <img class="block-center" src="img/app-icon.png" alt="">
+                          <header>
+                              <h3>App Design</h3>
+                          </header>
+                          <p>Nam purto solet eu, vero mediocrem hendrerit ad ius.</p>
                       </div>
                   </section>
-                  <section class="col-1-2 f-left">
-                      <div class="row">
-                          <div class="col-1-3 f-left">
-                              <div id="mary-smith" class="circle"></div>
-                          </div>
-                          <div class="col-1-2 f-right">
-                              <header>
-                                  <h3>Mary Smith</h3>
-                              </header>
-                              <p class="profile-p">Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
-                              <ul>
-                                  <li><a class="twitter-icon" href="http://www.twitter.com" target="_blank"></a></li>
-                                  <li><a class="facebook-icon" href="http://www.facebook.com" target="_blank"></a></li>
-                              </ul>
-                          </div>
+                  <section class="col-1-4">
+                      <div class="">
+                          <img src="img/print-icon.png" alt="">
+                          <header>
+                              <h3>Print Design</h3>
+                          </header>
+                      <p>Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
                       </div>
+                  </section>
+                  <section class="col-1-4">
+                      <div class="">
+                          <img src="img/interactive-icon.png" alt="">
+                          <header>
+                              <h3>Interactive</h3>
+                          </header>
+                      <p>Exerci antiopam constituam per ex, pro odio enim te, ut eam quidam docendi ancillae. Id nisl appareat mel.</p></div>
+                  </section>
+                  <section class="col-1-4">
+                      <div class="">
+                      <img src="img/branding-icon.png" alt="">
+                      <header>
+                          <h3>Branding</h3>	
+                      </header>
+                      <p>Lorem ipsum dolor sit amet, indoctum dissentiet eam ne. Eum omnium docendi cu.</p></div>
                   </section>
               </div>
           </div>
-    </section>
-<!-- FOOTER -->
-	<footer>
-    	<div class="wrapper">
-        	<div class="row">
-               		<div class="col-1-10 f-left">
-        				<h4><a href="#"><img src="img/logo.png" alt="Logo"></a></h4>
+      </section>
+  <!-- OUR PEOPLE -->
+      <section id="our-people">
+          <div class="wrapper">
+              <div id="our-people-overview" class="col-5-6 block-center"><!-- Is this also a section not a div? How can I target this without an ID? -->
+                  <div class="row">
+                      <header>
+                          <h2>Our People</h2>
+                          <p id="our-people-p"><!-- How can I target this without an ID? -->Ea expetenda prodesset cum, tibique principes laboramus id pro. Ei dolorem facilis volutpat sed, eu pro dicta iracundia scripserit. Vel singulis posidonium ea, primis possim voluptatum ei has. 
+                          Ut usu sale modus liberavisse. Eos reque mnesarchum ea, ea tamquam disputando has.</p>
+                      </header>
+                  </div>
+              </div>
+                <div class="row">
+                    <section class="col-1-2 f-left">
+                        <div class="row">
+                            <div class="col-1-3 f-left">
+                                <div id="john-doe" class="circle"></div>
+                            </div>
+                            <div class="col-1-2 f-right">
+                                <header>
+                                    <h3>John Doe</h3>
+                                </header>
+                                <p class="profile-p">Nam purto solet eu, vero mediocrem hendrerit ad ius.</p>
+                                <ul>
+                                    <li><a class="twitter-icon" href="http://www.twitter.com" target="_blank"></a></li>
+                                    <li><a class="facebook-icon" href="http://www.facebook.com" target="_blank"></a></li>
+                                </ul>
+                            </div>
                         </div>
-       	 			<div class="col-10-12  f-left">
-        				<p>6041 Old York Road</p>
-            			<p>Dekalb, IL 60115</p>
-        			</div>
-                     <div class="col-1-2 f-right">
-                	<nav>
-                    	<ul class="f-right">
-                        	<li><a href="#">Home</a></li>
-                            <li><a href="#">Work</a></li>
-                            <li><a href="#">About</a></li>
-                        </ul>
-                    </nav>
+                    </section>
+                    <section class="col-1-2 f-left">
+                        <div class="row">
+                            <div class="col-1-3 f-left">
+                                <div id="jane-doe" class="circle"></div>
+                            </div>
+                            <div class="col-1-2 f-right">
+                                <header>
+                                    <h3>Jane Doe</h3>
+                                </header>
+                                <p class="profile-p">Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
+                                <ul>
+                                    <li><a class="twitter-icon" href="http://www.twitter.com" target="_blank"></a></li>
+                                    <li><a class="facebook-icon" href="http://www.facebook.com" target="_blank"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
                 </div>
+                <div class="row">
+                    <section class="col-1-2 f-left">
+                        <div class="row">
+                            <div class="col-1-3 f-left">
+                                <div id="john-smith" class="circle"></div>
+                            </div>
+                            <div class="col-1-2 f-right">
+                                <header>
+                                    <h3>John Smith</h3>
+                                </header>
+                                <p class="profile-p">Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
+                                <ul>
+                                    <li><a class="twitter-icon" href="http://www.twitter.com" target="_blank"></a></li>
+                                    <li><a class="facebook-icon" href="http://www.facebook.com" target="_blank"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-1-2 f-left">
+                        <div class="row">
+                            <div class="col-1-3 f-left">
+                                <div id="mary-smith" class="circle"></div>
+                            </div>
+                            <div class="col-1-2 f-right">
+                                <header>
+                                    <h3>Mary Smith</h3>
+                                </header>
+                                <p class="profile-p">Vix ad posse impetus, vis id quem nobis suscipiantur. His an assum omnium periculis.</p>
+                                <ul>
+                                    <li><a class="twitter-icon" href="http://www.twitter.com" target="_blank"></a></li>
+                                    <li><a class="facebook-icon" href="http://www.facebook.com" target="_blank"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-               
             </div>
-    </footer>
-</body>
+      </section>
+  <!-- FOOTER -->
+      <footer>
+          <div class="wrapper">
+              <div class="row">
+                  <div class="col-1-10 logo">
+                      <h4><a href="#"><img src="img/logo.png" alt="Logo"></a></h4>
+                  </div>       	 			
+                  <div class="col-1-2 f-right p-right">
+                      <nav>
+                          <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#our-work">Work</a></li>
+                              <li><a href="#our-people">About</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+                  <div class="col-10-12">
+                      <p>6041 Old York Road</p>
+                      <p>Dekalb, IL 60115</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </body>
 </html>
